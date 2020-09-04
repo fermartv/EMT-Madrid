@@ -90,10 +90,10 @@ If you want to have a specific sensor to show the arrival time for the second bu
 
 ```yaml
 # Example configuration.yaml entry
- - platform: template
-     sensors:
-     siguiente_27:
-       friendly_name: "Siguiente bus 27"
-       unit_of_measurement: "min"
-       value_template: "{{ state_attr('sensor.bus_27_en_cibeles', 'later_bus') }}"
+- platform: template
+  sensors:
+    siguiente_27:
+      friendly_name: "Siguiente bus 27"
+      unit_of_measurement: "min"
+      value_template: "{{ state_attr('sensor.bus_27_en_cibeles', 'later_bus') }}"
 ```
