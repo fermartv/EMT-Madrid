@@ -27,11 +27,11 @@ To use the EMT Mobilitylabs API you need to register in their [website](https://
    sensor:
      - platform: emt_madrid
        email: !secret EMT_EMAIL
-        password: !secret EMT_PASSWORD
-        stop: "72"
-        line: "27"
-        name: "Bus 27 en Cibeles"
-        icon: "mdi:fountain"
+       password: !secret EMT_PASSWORD
+       stop: "72"
+       line: "27"
+       name: "Bus 27 en Cibeles"
+       icon: "mdi:fountain"
    ```
 
 ### Configuration Variables
@@ -93,7 +93,7 @@ If you want to have a specific sensor to show the arrival time for the second bu
  - platform: template
      sensors:
      siguiente_27:
-         friendly_name: "Siguiente bus 27"
-         unit_of_measurement: "min"
-         value_template: "{{ state_attr('sensor.bus_27_en_cibeles', 'later_bus') }}"
+       friendly_name: "Siguiente bus 27"
+       unit_of_measurement: "min"
+       value_template: "{{ state_attr('sensor.bus_27_en_cibeles', 'later_bus') }}"
 ```
